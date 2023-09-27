@@ -7,9 +7,11 @@ export function Displayer(){
     const[lastName,setLastName]= useState("");
 
     function handleClick(){
-        alert(`Hello ${firstName} ${lastName}!`)
-        setFirstName('')
-        setLastName('')
+        if(firstName.trim().length && lastName.trim().length){
+            alert(`Hello ${firstName} ${lastName}!`)
+            setFirstName('')
+            setLastName('')
+        }
     }
    
     return <div className='flex flex-col items-center space-y-5'>
