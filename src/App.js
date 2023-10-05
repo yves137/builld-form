@@ -1,5 +1,5 @@
-import {Header} from './Header'
-import {Displayer} from './Displayer'
+import { Header } from './Header'
+import { Displayer } from './Displayer'
 function App() {
   return (
     <div className="flex flex-col items-center">
